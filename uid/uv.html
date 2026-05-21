@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmos - UV & Sun</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="uv.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">🌤️ ATMOS</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="rain.html">Rain</a>
+                <a href="wind.html">Wind</a>
+                <a href="uv.html" class="active">UV & Sun</a>
+                <a href="temperature.html">Temperature</a>
+                <a href="map.html">Maps</a>
+                <a href="settings.html">Settings</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Enter city name...">
+            <button id="search-btn">Search</button>
+            <button id="location-btn">📍 Current Location</button>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>☀️ UV Index</h3>
+                <p id="uv-index">--</p>
+                <span id="uv-level" class="uv-level"></span>
+            </div>
+            <div class="stat-card">
+                <h3>🌅 Sunrise</h3>
+                <p id="sunrise">--</p>
+            </div>
+            <div class="stat-card">
+                <h3>🌇 Sunset</h3>
+                <p id="sunset">--</p>
+            </div>
+            <div class="stat-card">
+                <h3>🌙 Moon Phase</h3>
+                <p id="moon">--</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">3-Day UV Forecast</h2>
+        <div id="uv-daily" class="daily-container">
+            <p class="placeholder-msg">Search a city to see UV forecast</p>
+        </div>
+    </div>
+
+    <script src="uv.js"></script>
+</body>
+</html>
