@@ -37,7 +37,7 @@ function renderRain(data) {
     }
     document.getElementById("hourly-rain").innerHTML = hourlyHtml;
     
-    // Daily rain - without bars
+    // Daily rain
     let dailyHtml = "";
     data.forecast.forecastday.forEach((day, i) => {
         dailyHtml += `
