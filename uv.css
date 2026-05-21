@@ -1,0 +1,171 @@
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.stat-card {
+    background: #132435cc;
+    backdrop-filter: blur(4px);
+    padding: 24px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #2c4058;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    background: #162b41;
+}
+
+.stat-card h3 {
+    font-size: 14px;
+    color: #c2d3e6;
+    margin-bottom: 8px;
+}
+
+.stat-card p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3ea6ff;
+}
+
+.uv-level {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+/* Daily UV container */
+.daily-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+/* Daily UV cards */
+.daily-card {
+    background: #0f1c2b;
+    border-radius: 20px;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    transition: transform 0.2s, background 0.2s;
+    border: 1px solid #253e58;
+}
+
+.daily-card:hover {
+    transform: translateX(5px);
+    background: #162b41;
+    border-color: #3ea6ff;
+}
+
+.daily-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.daily-left span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #e8f2ff;
+}
+
+.uv-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Laptop */
+@media (min-width: 992px) {
+    .stats-grid {
+        gap: 20px;
+    }
+    
+    .stat-card p {
+        font-size: 36px;
+    }
+    
+    .daily-card {
+        padding: 24px 32px;
+    }
+    
+    .daily-left span {
+        font-size: 20px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .daily-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .daily-left {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .daily-card div:last-child {
+        text-align: center;
+        margin-top: 8px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .stat-card {
+        padding: 16px;
+    }
+    
+    .stat-card h3 {
+        font-size: 12px;
+    }
+    
+    .stat-card p {
+        font-size: 24px;
+    }
+    
+    .daily-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 16px;
+    }
+    
+    .daily-left {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .daily-left span {
+        font-size: 16px;
+    }
+    
+    .daily-card div:last-child {
+        margin-top: 8px;
+    }
+}

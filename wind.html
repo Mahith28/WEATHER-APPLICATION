@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmos - Wind Radar</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="wind.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">🌤️ ATMOS</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="rain.html">Rain</a>
+                <a href="wind.html" class="active">Wind</a>
+                <a href="uv.html">UV & Sun</a>
+                <a href="temperature.html">Temperature</a>
+                <a href="map.html">Maps</a>
+                <a href="settings.html">Settings</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Enter city name...">
+            <button id="search-btn">Search</button>
+            <button id="location-btn">📍 Current Location</button>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>💨 Wind Speed</h3>
+                <p id="wind-speed">-- km/h</p>
+            </div>
+            <div class="stat-card">
+                <h3>🧭 Direction</h3>
+                <p id="wind-dir">--</p>
+            </div>
+            <div class="stat-card">
+                <h3>⚡ Wind Gust</h3>
+                <p id="wind-gust">-- km/h</p>
+            </div>
+            <div class="stat-card">
+                <h3>🌡️ Feels Like</h3>
+                <p id="feelslike">--</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Hourly Wind Speed</h2>
+        <div id="hourly-wind" class="forecast-container">
+            <p class="placeholder-msg">Search a city to see hourly wind data</p>
+        </div>
+    </div>
+
+    <script src="wind.js"></script>
+</body>
+</html>

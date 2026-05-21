@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmos - Weather App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">🌤️ ATMOS</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="rain.html">Rain</a>
+                <a href="wind.html">Wind</a>
+                <a href="uv.html">UV & Sun</a>
+                <a href="temperature.html">Temperature</a>
+                <a href="map.html">Maps</a>
+                <a href="settings.html">Settings</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search city...">
+            <button id="search-btn">Search</button>
+            <button id="location-btn">📍 Current Location</button>
+        </div>
+
+        <div class="weather-card">
+            <div class="weather-left">
+                <h2 id="city">Search a city</h2>
+                <p id="weather">Weather Condition</p>
+                <br>
+                <p id="date-time">Date &amp; Time</p>
+            </div>
+            <div class="right-side">
+                <div class="weather-icon" id="weather-icon"></div>
+                <div class="temperature" id="temp">--</div>
+            </div>
+        </div>
+
+        <div class="details-grid">
+            <div class="detail-card">
+                <h3>💧 Humidity</h3>
+                <p id="humidity">--%</p>
+            </div>
+            <div class="detail-card">
+                <h3>💨 Wind Speed</h3>
+                <p id="wind-speed">-- km/h</p>
+            </div>
+            <div class="detail-card">
+                <h3>📊 Pressure</h3>
+                <p id="pressure">-- hPa</p>
+            </div>
+            <div class="detail-card">
+                <h3>🌿 AQI</h3>
+                <p id="aqi">--</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Hourly Forecast</h2>
+        <div class="forecast-container" id="hourly-container">
+            <p class="placeholder-msg">Search a city to see the hourly forecast.</p>
+        </div>
+
+        <h2 class="section-title">3-Day Forecast</h2>
+        <div class="daily-container" id="daily-container">
+            <p class="placeholder-msg">Search a city to see the 3-day forecast.</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

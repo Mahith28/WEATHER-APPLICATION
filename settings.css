@@ -1,0 +1,231 @@
+.settings-card {
+    background: #0f1c2b;
+    border-radius: 24px;
+    padding: 24px;
+    margin: 16px 0;
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid #1a2d42;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.setting-item:last-child {
+    border-bottom: none;
+}
+
+.setting-item h3 {
+    margin-bottom: 4px;
+}
+
+.setting-item p {
+    font-size: 14px;
+    color: #8aa1bc;
+}
+
+.toggle-group {
+    display: flex;
+    gap: 8px;
+}
+
+.setting-btn {
+    background: #1a2d42;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 30px;
+    color: #c2d3e6;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.setting-btn.active {
+    background: #3ea6ff;
+    color: white;
+}
+
+.danger-btn {
+    background: #c0392b;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.danger-btn:hover {
+    background: #e74c3c;
+}
+
+.info-card {
+    background: #0f1c2b;
+    border-radius: 24px;
+    padding: 24px;
+    margin-top: 16px;
+    text-align: center;
+    border: 1px solid #1a2d42;
+}
+
+.info-card h3 {
+    margin-bottom: 8px;
+}
+
+.info-card p {
+    font-size: 14px;
+    color: #8aa1bc;
+}
+
+/* Laptop (992px and above) */
+@media (min-width: 992px) {
+    .settings-card {
+        padding: 28px;
+        margin: 20px 0;
+    }
+    
+    .setting-item {
+        padding: 28px 0;
+        gap: 24px;
+    }
+    
+    .setting-item h3 {
+        font-size: 18px;
+    }
+    
+    .setting-item p {
+        font-size: 15px;
+    }
+    
+    .toggle-group {
+        gap: 12px;
+    }
+    
+    .setting-btn {
+        padding: 12px 28px;
+        font-size: 15px;
+    }
+    
+    .danger-btn {
+        padding: 12px 28px;
+        font-size: 15px;
+    }
+    
+    .info-card {
+        padding: 28px;
+    }
+    
+    .info-card h3 {
+        font-size: 18px;
+    }
+    
+    .info-card p {
+        font-size: 15px;
+    }
+}
+
+/* Tablet (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .settings-card {
+        padding: 20px;
+    }
+    
+    .setting-item {
+        padding: 20px 0;
+        gap: 16px;
+    }
+    
+    .setting-item h3 {
+        font-size: 16px;
+    }
+    
+    .setting-item p {
+        font-size: 13px;
+    }
+    
+    .toggle-group {
+        gap: 8px;
+    }
+    
+    .setting-btn {
+        padding: 9px 22px;
+        font-size: 13px;
+    }
+    
+    .danger-btn {
+        padding: 9px 22px;
+        font-size: 13px;
+    }
+    
+    .info-card {
+        padding: 20px;
+    }
+    
+    .info-card h3 {
+        font-size: 16px;
+    }
+    
+    .info-card p {
+        font-size: 13px;
+    }
+}
+
+/* Mobile (up to 767px) */
+@media (max-width: 767px) {
+    .settings-card {
+        padding: 16px;
+        margin: 12px 0;
+        border-radius: 20px;
+    }
+    
+    .setting-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 16px 0;
+        gap: 12px;
+    }
+    
+    .setting-item h3 {
+        font-size: 15px;
+        margin-bottom: 2px;
+    }
+    
+    .setting-item p {
+        font-size: 12px;
+    }
+    
+    .toggle-group {
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .setting-btn {
+        padding: 8px 18px;
+        font-size: 12px;
+        border-radius: 25px;
+    }
+    
+    .danger-btn {
+        padding: 8px 18px;
+        font-size: 12px;
+        border-radius: 25px;
+    }
+    
+    .info-card {
+        padding: 16px;
+        margin-top: 12px;
+        border-radius: 20px;
+    }
+    
+    .info-card h3 {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    
+    .info-card p {
+        font-size: 12px;
+    }
+}
