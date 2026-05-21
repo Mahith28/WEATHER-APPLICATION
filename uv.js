@@ -1,4 +1,4 @@
-const API_KEY = "2e4d358eb42a4ab688b115721261805";
+const API_KEY = "8b8b6831aedb41f0992204230262105";
 
 function getUVLabel(uv) {
     if (uv <= 2) return { text: "Low", color: "#2ecc71" };
