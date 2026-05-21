@@ -1,4 +1,4 @@
-const API_KEY = "2e4d358eb42a4ab688b115721261805";
+const API_KEY = "8b8b6831aedb41f0992204230262105";
 
 async function getWeather(query) {
     const url = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${encodeURIComponent(query)}&days=1`;
